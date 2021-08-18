@@ -1,0 +1,222 @@
+body {
+    background: hsl(225, 100%, 94%) url('images/pattern-background-mobile.svg') no-repeat;
+    background-size: contain;
+    font-family: 'Red Hat Display', sans-serif;
+    height: 100vh;
+    /* width: fit-content; */
+}
+
+/* ===========================IMPS ONLY============================== */
+.outer-container {
+    padding: 20px 20px;
+
+}
+
+.card {
+    background-color: white;
+    max-width: 30vw;
+    border-radius: 16px;
+    overflow: hidden;
+    padding-bottom: 20px;
+    text-align: center;
+    margin: 0 auto;
+    box-shadow: 0px 15px 25px -25px rgba(0, 0, 0, 0.3);
+}
+
+.card-img {
+    width: 100%;
+}
+
+.card>h1 {
+    font-size: 23px;
+    font-weight: 900;
+    color: hsl(223, 47%, 23%);
+}
+
+.gray {
+    font-size: 0.75rem;
+    letter-spacing: 0.8px;
+    padding: 0rem 2rem;
+    color: rgb(122, 122, 122);
+}
+
+.card-plan-info {
+    box-sizing: border-box;
+    background-color: hsl(225, 100%, 98%);
+    margin: 25px auto;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    width: 85%;
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+ul {
+    list-style: none;
+}
+
+.card-plan-btn {
+    margin-left: auto;
+    color: hsl(245, 75%, 52%);
+    /* text-decoration: none; */
+}
+
+.card-plan-btn:hover {
+    text-decoration: none;
+    filter: brightness(130%);
+}
+
+.plan-list {
+    list-style: none;
+    padding-left: 20px;
+}
+
+button {
+    display: block;
+    margin: 25px auto;
+    width: 85%;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 14px;
+}
+
+.payment-btn {
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+    padding: 15px 0;
+    border-radius: 10px;
+    border-style: none;
+    font-weight: 700;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+.payment-btn:hover {
+    filter: brightness(150%);
+    cursor: pointer;
+}
+
+.cancel-btn {
+    background-color: transparent;
+    border-style: none;
+    font-weight: 700;
+    color: gray;
+
+}
+
+.cancel-btn:hover {
+    color: black;
+    cursor: pointer;
+}
+
+li:not(:last-child) {
+    margin-bottom: 5px;
+}
+
+@media (min-width: 950px) {
+
+    body {
+        background: hsl(225, 100%, 94%) url('images/pattern-background-desktop.svg') no-repeat;
+    }
+
+    .outer-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+    }
+
+    .card p, .card-plan-info, button {
+        width: 80%;
+    }
+
+}
+@media (min-width:1010) and (max-width:1060px) {
+.card{
+    width: 70vw;
+    height: 50vh;
+}
+}
+@media (min-width:400px) and (max-width:1260px) {
+    .card-plan-info{
+        display: flex;
+        align-items: center;
+        justify-content:space-around;
+        margin: 0 auto;
+        width: 60%;
+    }
+    
+    .plan-list{
+        display: flex;
+        flex-direction: column;
+        padding: 0px 0px 0px 0px;
+    }
+    
+}
+
+
+@media (min-width:400px) and (max-width:960px) {
+    .card{
+        max-width: 50vw;
+    }
+}
+@media (min-width:250px) and (max-width:540px) {
+    .card{
+        max-width: 70vw;
+    }
+    .plan-list{
+        display: flex;
+        flex-direction: column;
+        padding: 0px 0px 0px 0px;
+        font-size: 1.05rem;
+        padding-top: 0.5rem 0rem 0.5rem 0rem;
+    }
+    .card-plan-info{
+        display: flex;
+        align-items: center;
+        justify-content:space-around;
+        flex-direction: column;
+        margin: 0 auto;
+        width: 60%;
+    }
+    
+    .card-plan-btn{
+        margin: 0px;
+        padding-top: 0.5rem;
+    }
+    
+    .music-icon{
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+}
+@media (min-width:250px) and (max-width:410px) {
+    .card{
+        max-width: 70vw;
+    }
+    
+    .plan-list{
+        display: flex;
+        flex-direction: column;
+        padding: 0px 0px 0px 0px;
+        font-size: 1.05rem;
+        padding-top: 0.5rem 0rem 0.5rem 0rem;
+    }
+    .card-plan-info{
+        display: flex;
+        align-items: center;
+        justify-content:space-around;
+        flex-direction: column;
+        margin: 0 auto;
+        width: 60%;
+    }
+
+    .card-plan-btn{
+        margin: 0px;
+        padding-top: 0.5rem;
+    }
+
+    .music-icon{
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+}
